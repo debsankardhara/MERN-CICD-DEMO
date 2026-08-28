@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    allowedHosts: true // Allows all hosts, including your Render URL
-  }
+ server: {
+  allowedHosts: ['mern-frontend-latest-v3qs.onrender.com']
+}
 });
