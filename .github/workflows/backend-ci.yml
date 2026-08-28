@@ -29,4 +29,7 @@ jobs:
         run: npm install
 
       - name: Build Docker image
-        run: docker build -t mern-backend ./backend
+        run: docker build -t debsankar53/mern-backend:latest ./backend
+
+      - name: Push Docker image
+        run: docker push debsankar53/mern-backend:latest
